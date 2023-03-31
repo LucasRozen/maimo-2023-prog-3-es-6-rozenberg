@@ -47,7 +47,6 @@ Tips:
 20. Write your own function using at least 3 concepts.
 
 */
-
 import songs from "./songs.js";
 import * as utils from "./utils.js";
 
@@ -70,7 +69,7 @@ console.log('Ex 9.', utils.sum(...songs.map(({ year }) => year)));
 
 console.log('Ex 10.', Math.floor(utils.sum(...songs.map(({ year }) => year)) / songs.length));
 
-const longestTitleLength = Math.max(...songs.map(({ title }) => title.length))
+const longestTitleLength = Math.max(...songs.map(({ title }) => title.length));
 console.log('Ex 11.', songs.find(({ title }) => title.length === longestTitleLength));
 
 const [{ title, artist, year }] = songs;
